@@ -60,7 +60,7 @@ a{
     cursor:url(cursors/wait.ani)
 }
 #container {
-
+    /* height:3000px; */
     margin-top:0px;
     margin-bottom:0px;
     margin-left: auto;
@@ -91,17 +91,16 @@ ul{
  }
 
  main  {
-   height:2000px;
+    min-height: 100vh;
     margin-top: 60px;
     background-color: #fafafa;
     border: #9a9a9a solid;
     display:flex;
     flex-direction: column;
-    flex-wrap: wrap;
     border-radius:10px;
-    padding-top: 20px;
-    padding-left: 5%;
-    padding-right: 5%;
+    /* padding-top: 30%; */
+    padding-left: 8%;
+    padding-right: 8%;
 
  }
 
@@ -140,17 +139,17 @@ ul{
     margin-top: 50px;
     border-radius: 100px;
 }
-main #about,#skills,#projects{
-    margin-top: 40px;
+main #about,#skills, #projects{
+    margin-top: 5%;
     /* border: red dotted; */
     display:flex;
     flex-direction: column;
+    flex-wrap: nowrap;
     text-align: center;
+    border-bottom: #9a9a9a dashed;
+     padding-bottom: 5%;
 }
 
-main #about{
-    border-bottom: #9a9a9a dashed;
-}
 .gridlayout{
     /* border: red dotted ; */
     display:grid;
@@ -158,10 +157,12 @@ main #about{
     /* border:blue dotted; */
 }
 
-#skills{
+main #skills{
     /* border:red dotted; */
-    height: 50%;
+     height: fit-content; 
+
 }
+
 
 .card{
     /* border:#9bbcff dotted; */
@@ -179,9 +180,6 @@ main #about{
     margin-top:30%;
 }
 
-
-
-
 .card:hover{
     /* background-color: #222222; */
     opacity:0.5;
@@ -197,4 +195,9 @@ i{
 
 #socials ul,li,a{
     text-decoration: none;
+}
+.projgridlayout{
+    display: grid;
+    grid-template-columns: repeat(3,minmax(0,1fr));
+
 }
