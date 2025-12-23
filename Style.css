@@ -201,3 +201,45 @@ i{
     grid-template-columns: repeat(3,minmax(0,1fr));
 
 }
+.projcard{
+    background-color: #eaeaea;
+    width: 90%;
+    height:90%;
+    margin-left: 5%;
+    margin-top:5%;
+    border-radius: 10px;
+    aspect-ratio: 1/1;
+    border:#c0c0c0 solid 1px;
+}
+.projcard:hover{
+    opacity:0.8;
+    transition:0.3s;
+    box-shadow: 0 4px 10px 0 #9a9a9a;
+    scale:105%;
+
+}
+
+.projcard>a>i{
+    visibility:hidden;
+    opacity:0%;
+    margin-top: 20%;
+    transition:opacity 0.3s;
+    color:black;
+    
+}
+.projcard:hover>h5{
+    visibility:visible;
+    opacity: 100%;
+}
+.projcard:hover>a>i{
+    visibility: visible;
+    opacity: 100%;
+}
+.projcard>h5{
+    visibility:hidden;
+    opacity:0%
+}
+.projcard:hover>h2{
+    visibility: hidden;
+    opacity: 0%;
+}
