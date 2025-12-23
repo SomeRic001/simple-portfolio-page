@@ -101,7 +101,7 @@ ul{
     /* padding-top: 30%; */
     padding-left: 8%;
     padding-right: 8%;
-
+    padding-bottom: 5%;
  }
 
  footer{
@@ -218,7 +218,9 @@ i{
     scale:105%;
 
 }
-
+.projcard>h2{
+    margin-top: -10%;
+}
 .projcard>a>i{
     visibility:hidden;
     opacity:0%;
@@ -242,4 +244,7 @@ i{
 .projcard:hover>h2{
     visibility: hidden;
     opacity: 0%;
+}
+.projcard:hover>a:hover>i{
+    transform:translateY(-20%);
 }
