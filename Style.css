@@ -6,24 +6,39 @@
         font-size: 20px;
         margin:2px;
     }
-
+    
+    .gridlayout{
+    /* border: red dotted ; */
+    display:grid;
+    grid-template-columns: repeat(4,minmax(0,1fr));
+    /* border:blue dotted; */
+    
+    }
+    .projgridlayout{
+    display: grid;
+    grid-template-columns: repeat(3,minmax(0,1fr));
+    }
 }
+
 @media (max-width:980px){
     #container{
             width: 100%;
     }
     #navbar ul{
-        font-size: 3vh;
+        font-size: 23px;
         margin:0px;
+       
     }
     #about>p{
-        font-size: 1vh;
+        font-size: 1.5vh;
     }
-    #about,#skill,#projects >h1{
-        font-size:2vh
+    .projgridlayout,.gridlayout{
+    display: grid;
+    grid-template-columns: repeat(2,minmax(0,1fr));
     }
-
 }
+
+
 @media (max-width: 525px)
 {
     #home{
@@ -159,12 +174,6 @@ main #about,#skills{
     border-bottom: #9a9a9a dashed;
 }
 
-.gridlayout{
-    /* border: red dotted ; */
-    display:grid;
-    grid-template-columns: repeat(4,minmax(0,1fr));
-    /* border:blue dotted; */
-}
 
 main #skills{
     /* border:red dotted; */
@@ -205,11 +214,7 @@ i{
 #socials ul,li,a{
     text-decoration: none;
 }
-.projgridlayout{
-    display: grid;
-    grid-template-columns: repeat(3,minmax(0,1fr));
 
-}
 .projcard{
     background-color: #eaeaea;
     width: 90%;
