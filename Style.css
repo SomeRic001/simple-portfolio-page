@@ -15,11 +15,12 @@
     #navbar ul{
         font-size: 23px;
         margin:0px;
-        margin-left:-7%;
-       
     }
     #about>p{
-        font-size: 2vh;
+        font-size: 1vh;
+    }
+    #about,#skill,#projects >h1{
+        font-size:2vh
     }
 
 }
