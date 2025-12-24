@@ -13,8 +13,13 @@
             width: 100%;
     }
     #navbar ul{
-        font-size:120%;
+        font-size: 23px;
         margin:0px;
+        margin-left:-7%;
+       
+    }
+    #about>p{
+        font-size: 2vh;
     }
 
 }
@@ -146,8 +151,11 @@ main #about,#skills, #projects{
     flex-direction: column;
     flex-wrap: nowrap;
     text-align: center;
-    border-bottom: #9a9a9a dashed;
+
      padding-bottom: 5%;
+}
+main #about,#skills{
+    border-bottom: #9a9a9a dashed;
 }
 
 .gridlayout{
