@@ -22,6 +22,9 @@
         min-width:18vw;
         max-width: 25vw;
     }
+    #message{
+    padding-right: 73%;
+    }
 }
 
 @media (max-width:980px){
@@ -47,6 +50,10 @@
         min-width:28.5vw;
         max-width: 48vw;
      }
+     #message{
+    padding-right: 73%;
+    padding-left:20%
+    }
 }
 
 
@@ -80,10 +87,10 @@ html,body {
   background-size:400% 400%;
   text-align: center;
 }
-p, h1, h2, h3, h4, h5, h6,li {
+p, h1, h2, h3, h4, h5, h6,li,input, textarea {
     cursor:url(cursors/ibeam.cur),auto !important;
 }
-a{
+a, button{
     cursor:url(cursors/finger.cur), auto !important;
 }
 #navbar ul li a:hover{
@@ -224,7 +231,7 @@ i{
     
 }
 
-#socials ul,li,a{
+#links ul,li,a{
     text-decoration: none;
 }
 
@@ -282,23 +289,46 @@ i{
     border:#9a9a9a solid 2px;
     border-radius: 7px;
     padding-bottom: 3%;
-    padding-right:3%;
+    padding-right:4%;
     width:50%
 }
-footer> #socials{
-    width:45%;
+
+footer> #links{
+    /* border:red dotted; */
     margin-top: 10px;
     margin-bottom : 10px;
+    /* margin-right:3%; */
+    width:50%;
+   margin-right: 3%;
+}
+footer>#links>#socials{
     background-color: #f4f4f4;
     border:#c0c0c0 solid 2px;
     border-radius: 7px;
-    margin-right:3%;
-    padding-right:3%;
-    width:50%
+    margin-top: 10%;
+    padding-right: 8%;
 }
-footer> #socials>ul{
+footer>#links>#resume{
+    background-color: #f4f4f4;
+    border:#c0c0c0 solid 2px;
+    border-radius: 7px;
+    padding-bottom:13%;
+    
+}
+footer> #links>#socials>ul{
     display:flex;
+    flex-direction: row;
+    justify-content: space-around;
 
+}
+footer>#links>#socials>ul>li>a>i{
+    font-size: 300%;
+}
+footer> #links>#socials>ul>li>a{
+    color:#000000;
+}
+footer> #links>#socials>ul>li>a:hover{
+    color:#c0c0c0;
 }
 #contact>form {
     display:inline-block;
@@ -325,15 +355,60 @@ textarea{
     min-height:10vh
 }
 
-#message{
-    padding-right: 73%;
-}
+
 button{
     margin-top :3%;
-    margin-right:30%
+    text-align: center;
+    background-color:black;
+    border-radius: 7px;
+    color:white;
+    padding: 5%;
+    font-size: larger;
+
+}
+button:hover{
+    scale:105%;
+    color:#000000;
+    background-color: #c0c0c0;
+    border: none;
 }
 
 input:focus, textarea:focus{
     outline: solid 2px;
     outline-color: #615c5c ;
+}
+#mail{
+    /* background-color: #ecebeb; */
+    margin-left:18%;
+    height:10%;
+    width:80%
+}
+#mail a{
+    text-decoration: none;
+    color:#000000;
+    padding-bottom: 20%;
+}
+#mail a:hover{
+    color:#c0c0c0
+}
+.resume_btn{
+    color:white;
+    font-size:larger;
+    background-color: black;
+    border-radius: 8px;
+    padding:5%;
+    margin-top:10%
+}
+.resume_btn:hover{
+    color:rgb(0, 0, 0);
+    font-size:larger;
+    background-color: #c0c0c0;
+    border-radius: 8px;
+    padding:5%;
+    margin-top:10%;
+    
+}
+.send_button{
+    text-align: center;
+    margin-left: 15%;
 }
